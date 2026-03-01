@@ -20,6 +20,13 @@ const baseUrl = (isLocal || isVercel) ? '/'
   : isGitHub ? '/Mawarid_Documentation/'
     : '/mawarid-docs/';
 
+const oauthProxyUrl = process.env.OAUTH_PROXY_URL || (
+  isLocal ? 'http://localhost:3001' :
+    (isVercel || isGitHub) ? 'https://mawarid-document.onrender.com/mawarid-docs-api' :
+      'https://portal.mawarid.com.sa/mawarid-docs-api'
+);
+
+
 const config: Config = {
   title: 'Mawarid',
   tagline: 'Official documentation for all Mawarid portal applications',
@@ -47,7 +54,7 @@ const config: Config = {
   // GitHub OAuth — Client ID is safe to expose; secret lives in backend/.env
   customFields: {
     githubClientId: 'Iv23liWtW89aR8lj7QAj',
-    oauthProxyUrl: process.env.OAUTH_PROXY_URL || (isLocal ? 'http://localhost:3001' : 'https://portal.mawarid.com.sa/mawarid-docs-api'),
+    oauthProxyUrl: oauthProxyUrl,
   },
 
   // Even if you don't use internationalization, you can use this field to set
