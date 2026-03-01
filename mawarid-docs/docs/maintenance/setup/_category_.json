@@ -1,0 +1,8 @@
+{
+    "label": "Setup",
+    "position": 11,
+    "link": {
+        "type": "generated-index",
+        "description": "Configuration data: Categories, Activities, Asset Types, Schedules, Materials, and Location Types."
+    }
+}

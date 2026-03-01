@@ -1,0 +1,8 @@
+{
+    "label": "Provider",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "Provider portal pages for managing assigned locations and pending orders."
+    }
+}

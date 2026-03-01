@@ -1,0 +1,116 @@
+/* ── Wrapper ── */
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    margin-left: 15px;
+}
+
+/* ── profile button (avatar + name) ── */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background: none;
+    border: none;
+    padding: 4px 0;
+    cursor: pointer;
+    color: var(--ifm-navbar-link-color);
+    font-size: 0.84rem;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.profile:hover .username {
+    color: var(--ifm-color-primary);
+}
+
+/* ── Avatar ── */
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+}
+
+/* ── Avatar Fallback (first letter) ── */
+.avatarFallback {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #117a65, #1a9c85);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+/* ── Username text ── */
+.username {
+    max-width: 120px;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+    white-space: nowrap;
+}
+
+/* ── Dropdown menu ── */
+.dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 180px;
+    background: var(--tb-card-bg, #ffffff);
+    border: 1px solid var(--tb-card-border, #e5e7eb);
+    border-radius: 10px;
+    box-shadow: var(--tb-card-shadow, 0 8px 30px rgba(0, 0, 0, 0.12));
+    padding: 6px;
+    z-index: 1000;
+    animation: dropdownIn 0.15s ease;
+}
+
+@keyframes dropdownIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── Dropdown item ── */
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 7px;
+    color: var(--tb-card-text, #1f2937);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: background 0.15s;
+    cursor: pointer;
+}
+
+.dropdownItem:hover {
+    background: var(--tb-btn-secondary-hover, #f3f4f6);
+    text-decoration: none;
+    color: var(--tb-card-text, #1f2937);
+}
+
+.dropdownItem svg {
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+.dropdownItem:hover svg {
+    opacity: 1;
+}

@@ -1,0 +1,156 @@
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, #0a2d4d 0%, #1a5276 60%, #117a65 100%);
+  padding: 80px 24px 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.heroInner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.heroLogo {
+  height: 72px;
+  margin-bottom: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.heroTitle {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.heroSubtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 32px;
+}
+
+.heroBtn {
+  display: inline-block;
+  background: #fff;
+  color: #0a2d4d;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.heroBtn:hover {
+  background: #e8f4f0;
+  color: #0a2d4d;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* ── About ── */
+.about {
+  background: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.aboutInner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.aboutInner h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.aboutInner p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--ifm-font-color-secondary);
+}
+
+/* ── Project Cards ── */
+.projects {
+  padding: 56px 24px 72px;
+}
+
+.projectsTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-toc-border-color);
+  background: var(--ifm-background-surface-color);
+  text-decoration: none !important;
+  transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+}
+
+.cardCompleted {
+  border-color: #27ae60;
+  background: color-mix(in srgb, #27ae60 6%, var(--ifm-background-surface-color));
+}
+
+.cardCompleted:hover {
+  border-color: #1e8449 !important;
+  box-shadow: 0 6px 24px rgba(39, 174, 96, 0.18);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.completedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: #27ae60;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  border-color: var(--ifm-color-primary);
+}
+
+.cardLabel {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.cardDesc {
+  font-size: 0.82rem;
+  color: var(--ifm-font-color-secondary);
+  line-height: 1.4;
+}

@@ -1,0 +1,8 @@
+{
+    "label": "Remote Pages",
+    "position": 2,
+    "link": {
+        "type": "generated-index",
+        "description": "Pages that fetch data remotely from ERP and CRM systems."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "label": "My Approvals",
+    "position": 5,
+    "link": {
+        "type": "generated-index",
+        "description": "View and act on document approval requests assigned to you."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "label": "My Task",
+    "position": 9,
+    "link": {
+        "type": "generated-index",
+        "description": "Tasks assigned to the current user filtered by status."
+    }
+}

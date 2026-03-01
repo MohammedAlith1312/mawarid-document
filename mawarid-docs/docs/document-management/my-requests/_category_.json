@@ -1,0 +1,8 @@
+{
+    "label": "My Requests",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "View and manage your document requests by workflow status."
+    }
+}

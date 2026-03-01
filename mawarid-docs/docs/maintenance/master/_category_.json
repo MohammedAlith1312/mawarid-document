@@ -1,0 +1,8 @@
+{
+    "label": "Master",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "Master data: Sites, Locations, Assets, and Employees."
+    }
+}

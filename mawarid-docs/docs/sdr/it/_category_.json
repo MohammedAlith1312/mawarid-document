@@ -1,0 +1,8 @@
+{
+    "label": "IT",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "IT team pages for reviewing requests, managing projects, and tracking tasks."
+    }
+}
