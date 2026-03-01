@@ -10,7 +10,7 @@ const isLocal = process.env.NODE_ENV === 'development';
 const isGitHub = !isLocal && process.env.DEPLOY_TARGET !== 'iis';
 const siteUrl = isLocal ? 'http://localhost:3000'
   : isGitHub ? 'https://faaztechsolutions.github.io'
-    : 'https://portal.mawarid.com.sa';
+    : 'https://mawarid-document.vercel.app/';
 const baseUrl = isLocal ? '/'
   : isGitHub ? '/Mawarid_Documentation/'
     : '/mawarid-docs/';
