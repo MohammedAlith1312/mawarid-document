@@ -1,8 +1,8 @@
 import { TextIssue } from './types';
 
-export const apiBase = typeof window !== 'undefined' && window.location.hostname === 'localhost' && window.location.port !== '5000'
+export const apiBase = typeof window !== 'undefined' && window.location.hostname === 'localhost'
     ? 'http://localhost:3001'
-    : '';
+    : 'https://mawarid-document.onrender.com';
 
 export const fetchIssuesList = async (): Promise<TextIssue[]> => {
     try {
