@@ -11,7 +11,7 @@ function AuthCallbackInner() {
     const [errorMsg, setErrorMsg] = useState('');
 
     const proxyUrl =
-        (siteConfig.customFields?.oauthProxyUrl as string) || 'http://localhost:3001';
+        (siteConfig.customFields?.oauthProxyUrl as string) || 'http://localhost:3001' || 'https://mawarid-document.onrender.com';
     const baseUrl = siteConfig.baseUrl || '/';
 
     useEffect(() => {
