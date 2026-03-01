@@ -7,11 +7,16 @@ import type * as Preset from '@docusaurus/preset-classic';
 // Deployment target: set DEPLOY_TARGET=iis for IIS, default is GitHub Pages
 // In local dev (npm run start), NODE_ENV=development so baseUrl is always '/'
 const isLocal = process.env.NODE_ENV === 'development';
-const isGitHub = !isLocal && process.env.DEPLOY_TARGET !== 'iis';
+const isVercel = !!process.env.VERCEL;
+const isIIS = process.env.DEPLOY_TARGET === 'iis';
+const isGitHub = !isLocal && !isIIS && !isVercel;
+
 const siteUrl = isLocal ? 'http://localhost:3000'
-  : isGitHub ? 'https://faaztechsolutions.github.io'
-    : 'https://mawarid-document.vercel.app';
-const baseUrl = isLocal ? '/'
+  : isVercel ? 'https://mawarid-document.vercel.app'
+    : isGitHub ? 'https://faaztechsolutions.github.io'
+      : 'https://portal.mawarid.com.sa';
+
+const baseUrl = (isLocal || isVercel) ? '/'
   : isGitHub ? '/Mawarid_Documentation/'
     : '/mawarid-docs/';
 
